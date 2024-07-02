@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCP CORPS</title>
-    <link rel="stylesheet" href="../acss/style.css"> <!-- Updated path to style.css -->
+    <link rel="stylesheet" href="../acss/style.css"> 
     <style>
         body {
             display: flex;
@@ -13,8 +13,24 @@
             height: 100vh;
             margin: 0;
             background-color: #000000;
-            flex-direction: column; /* Align items in a column */
-            text-align: center; /* Center align text */
+            text-align: center; 
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(27, 106, 232, 0.846); /* Semi-transparent background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(14, 110, 220, 0.689); /* Drop shadow */
+        }
+
+        .text-container {
+            flex: 1; 
+            text-align: left; 
+            margin-right: 30px; /* Space between text and image */
         }
 
         .profile-container {
@@ -22,18 +38,16 @@
         }
 
         .profile-img {
-            width: 100px; /* Adjust size as needed */
-            height: 100px; /* Adjust size as needed */
-            border-radius: 50%; /* Ensures it's circular */
-            margin-right: 10px; /* Spacing between image and text */
-            vertical-align: middle; /* Aligns image vertically with text */
-            cursor: pointer; /* Add cursor pointer for interaction */
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            cursor: pointer; 
         }
 
         .welcome-text {
             font-size: 24px;
             color: #fff;
-            margin-bottom: 10px; /* Add space between welcome text and products text */
+            margin-bottom: 1px;
         }
 
         .products-text {
@@ -42,7 +56,8 @@
         }
 
         .upload-btn {
-            margin-top: 10px; /* Spacing above the button */
+            display: inline-block; /* Adjust button display */
+            margin-top: 10px; 
             padding: 10px 20px;
             background-color: #4CAF50;
             color: #fff;
@@ -54,28 +69,84 @@
         .upload-btn:hover {
             background-color: #45a049;
         }
+
+        .about-btn {
+            display: inline-block; /* Adjust button display */
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .about-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .table-container {
+            flex: 1; /* Take remaining space */
+            text-align: center; 
+        }
+
+        table {
+            width: 100%; 
+            border-collapse: collapse;
+            margin-top: 20px; /* Space above the table */
+        }
+
+        th, td {
+            padding: 10px; 
+            border: 1px solid #fff; 
+            color: #fff; 
+        }
+
+        th {
+            background-color: #007BFF; /* Header background color */
+        }
+
+        td {
+            background-color: #4CAF50; /* Cell background color */
+        }
+
+        .independent-img {
+            width: 300px; 
+            height: 300px; 
+            border-radius: 20px; 
+            margin-left: 30px; /* Space between text and image */
+        }
     </style>
 </head>
 <body>
-    <div class="profile-container">
-        <label for="file-upload">
-            <img src="path_to_your_default_profile_picture.jpg" alt="Profile Picture" class="profile-img" id="profile-img"> <!-- Replace with default image path -->
-        </label>
-        <input type="file" id="file-upload" style="display: none;" accept="image/*" onchange="previewImage(event)">
-        <h1 class="welcome-text">Hello, <span id="username">User!</span> Welcome to Neo Consumer Products Website.</h1>
+    <div class="content">
+        <div class="text-container">
+            <div class="profile-container">
+                <label for="file-upload">
+                    <img src="https://example.com/default_profile_picture.jpg" alt="Profile Picture" class="profile-img" id="profile-img"> 
+                </label>
+                <input type="file" id="file-upload" style="display: none;" accept="image/*" onchange="previewImage(event)">
+                <h1 class="welcome-text">Hello, <span id="username">User!</span> Welcome to Neo Consumer Products Website.</h1>
+            </div>
+            <div>
+                <p class="products-text">We have multiple products to sell for you! >.<</p>
+                <button class="upload-btn">Start</button>
+                <button class="about-btn" onclick="window.location.href='../chtml/zabout.html'">About Us</button>
+            </div>
+        </div>
+
+        <img src="https://static.vecteezy.com/system/resources/previews/027/427/199/original/ncp-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg" alt="Independent Image" class="independent-img">
     </div>
-    <div>
-        <p class="products-text">We have multiple products to sell for you! >.<</p>
-    </div>
-    <script src="../bjavascript/script.js"></script> <!-- Updated path to script.js -->
+    <script src="bjavascript/script.js"></script> 
     <script>
-        // Retrieve user's name from localStorage and display
+        
+        // Users-name retriever
         const name = localStorage.getItem("name");
         if (name) {
             document.getElementById("username").innerText = name;
         }
 
-        // Function to preview selected image
+        // IMAGE PREVIEW
         function previewImage(event) {
             const file = event.target.files[0];
             if (file) {

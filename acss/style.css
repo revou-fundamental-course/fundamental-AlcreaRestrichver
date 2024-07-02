@@ -1,10 +1,10 @@
-/* Reset default margin and padding */
+
 body, html {
     margin: 0;
     padding: 0;
 }
 
-/* Flexbox for centering */
+
 body {
     display: initial;
     justify-content: center;
@@ -14,7 +14,6 @@ body {
     background-color: #ffffff; 
 }
 
-/* Container for the form */
 .form-container {
     background-color: #000;
     color: #ff0000;
@@ -26,7 +25,6 @@ body {
     text-align: center;
 }
 
-/* Style for form elements */
 #signup-form {
     margin-top: 100px;
 }
