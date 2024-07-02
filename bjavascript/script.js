@@ -6,7 +6,7 @@ document.getElementById('signup-form').addEventListener("submit", function(event
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const passwordConfirmation = document.getElementById("password_confirmation").value;
-
+ 
     // Basic form validation
     if (!name || !email || !password || !passwordConfirmation) {
         alert("Please fill in all the fields!");

@@ -4,32 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="../acss/style.css"> 
+    <link rel="stylesheet" href="../acss/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: brown;
+            text-align: center;
+            position: relative; /* Needed for positioning the back button */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-block; /* Adjust button display */
+            margin: 10px; 
+            padding: 15px 30px; /* Increase padding for a more stylish look */
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; /* Ensure buttons look like buttons, not links */
+            font-size: 16px; /* Increase font size */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+        }
+
+        .btn:hover {
+            background-color: #0e920ea5;
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+
+        hr {
+            width: 10cm;
+            border: 1px solid brown; /* Make the hr element stylish */
+            margin: 20px auto; /* Center hr element */
+        }
+
+        .table-container {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+ 
+        th {
+            background-color: #007BFF;
+        }
+
+        td {
+            background-color: #4CAF50;
+        }
+
+        .back-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .center-btn {
+            margin-top: 20px;
+        }
+    </style> 
 </head>
-<hr style="width: 10cm; display: flex;">
-<body style="color: brown;">
-    <center><h1><b>About Us</b></center></h1>
-    <center><p><h2><b> NCP Vanguard is a e-catalog for government all over the world. We sells lot's of things including military supplies and other items. </b></h2></center></p>
-    <center><p><h2><b> We have existed since early 2020 and sold more than 1000 unique items to many governments all over the worlds. </b></h2></center></p>
-    <center><p><h2><b> We proud with our quality goods of items, and we will keep more improving again and again. </b></h2></center></p>
-    <p></p>
-    <p></p>
-    <hr style="width: 15cm; display: flex;">
-    <p></p>
-    <p></p>
-    <center><p><h2><b> Our Vision and Mission:
-    <center><p><h2><b> We tried and wanted to be the best of the best by being the governments suppliers. Governments trust is all we have to keep continue. </b></h2></center></p>
-    <center><p><h2><b> And so, because of that. We tried our best to keep improving the quality items we sell in our e-catalog. </b></h2></center></p>
-    <p></p>
-    <p></p>
-    <hr style="width: 20cm; display: flex;">
-    <p></p>
-    <center><p><h2><b> Our support contacts:</b></h2></center></p>
-    <center><p><h2><b> email: ncpvg@gmail.com | address: Rd. Fredrick 2 34/55 D </address></b>
-    <p></p>
-    <hr style="width: 25cm; display: flex;">
-    
+<body>
+    <center><h1><b> About NCP Vanguard </b></h1></center>
+    <hr>
+
+    <button class="btn center-btn Company_Profiles" onclick="window.location.href='../chtml/zz_companyprofiles.html'">Company Profiles</button>
+    <button class="btn back-btn" onclick="window.location.href='../chtml/index.html'">Back</button>
 
 </body>
-
 </html>

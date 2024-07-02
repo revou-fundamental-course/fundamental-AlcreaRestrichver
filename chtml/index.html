@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCP CORPS</title>
+    <title> NCP VANGUARD </title>
     <link rel="stylesheet" href="../acss/style.css"> 
     <style>
         body {
@@ -55,11 +55,27 @@
             color: #fff;
         }
 
+        .back-btn {
+            display: inline-block; /* Adjust button display */
+            margin-top: 10px; 
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .back-btn:hover {
+            background-color: #0e920ea5;
+        }
+
+
         .upload-btn {
             display: inline-block; /* Adjust button display */
             margin-top: 10px; 
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #000000;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -67,14 +83,14 @@
         }
 
         .upload-btn:hover {
-            background-color: #45a049;
+            background-color: #0e920ea5;
         }
 
         .about-btn {
             display: inline-block; /* Adjust button display */
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #007BFF;
+            background-color: #000000;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -82,7 +98,27 @@
         }
 
         .about-btn:hover {
-            background-color: #0056b3;
+            background-color: #0e920ea5;
+        }
+
+        .Chatting-btn {
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .Chatting-btn:hover {
+            background-color: #0e920ea5;
+        }
+
+        .Chatting-btn {
+            display: inline-block; /* Adjust button display */
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
         .table-container {
@@ -114,9 +150,16 @@
             width: 300px; 
             height: 300px; 
             border-radius: 20px; 
-            margin-left: 30px; /* Space between text and image */
+            margin-left: 30px;  /* Space between text and image */ 
         }
     </style>
+
+
+
+/* PERBATASAN */
+
+
+ 
 </head>
 <body>
     <div class="content">
@@ -130,8 +173,10 @@
             </div>
             <div>
                 <p class="products-text">We have multiple products to sell for you! >.<</p>
-                <button class="upload-btn">Start</button>
-                <button class="about-btn" onclick="window.location.href='../chtml/zabout.html'">About Us</button>
+                <buton class="back-btn" onclick="window.location.href='../chtml/a_maininterface.html'"> Back </buton>
+                <button class="upload-btn" onclick="window.location.href='../chtml/zzz_startup.html'"> Start </button>
+                <button class="Chatting-btn" onclick="window.location.href='../chtml/zz_message_us.html'"> Message us </button> 
+                <button class="about-btn" onclick="window.location.href='../chtml/zabout.html'"> About Us</button>
             </div>
         </div>
 
@@ -139,7 +184,7 @@
     </div>
     <script src="bjavascript/script.js"></script> 
     <script>
-        
+
         // Users-name retriever
         const name = localStorage.getItem("name");
         if (name) {
