@@ -25,3 +25,20 @@ document.getElementById('signup-form').addEventListener("submit", function(event
     // Redirect to index.html
     window.location.href = "../chtml/index.html"; // Updated path to index.html
 });
+
+// MESSAGE US AREA //
+document.getElementById('message-us').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('ms-name').value;
+    var birthdate = document.getElementById('ms-birthdate').value;
+    var gender = document.getElementById('ms-gender').value;
+    var message = document.getElementById('ms-message').value;
+
+    document.getElementById('result-name').textContent = name;
+    document.getElementById('result-birthdate').textContent = birthdate;
+    document.getElementById('result-gender').textContent = gender;
+    document.getElementById('result-message').textContent = message;
+
+    this.reset(); // Optional: Reset the form after submission
+});

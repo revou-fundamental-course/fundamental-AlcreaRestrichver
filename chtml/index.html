@@ -22,15 +22,15 @@
             max-width: 800px;
             margin: 20px;
             padding: 20px;
-            background-color: rgba(27, 106, 232, 0.846); /* Semi-transparent background */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 20px rgba(14, 110, 220, 0.689); /* Drop shadow */
+            background-color: rgba(27, 106, 232, 0.846); 
+            border-radius: 10px; 
+            box-shadow: 0 0 20px rgba(14, 110, 220, 0.689); 
         }
 
         .text-container {
             flex: 1; 
             text-align: left; 
-            margin-right: 30px; /* Space between text and image */
+            margin-right: 30px; 
         }
 
         .profile-container {
@@ -129,7 +129,7 @@
         table {
             width: 100%; 
             border-collapse: collapse;
-            margin-top: 20px; /* Space above the table */
+            margin-top: 20px; 
         }
 
         th, td {
@@ -139,18 +139,18 @@
         }
 
         th {
-            background-color: #007BFF; /* Header background color */
+            background-color: #007BFF; 
         }
 
         td {
-            background-color: #4CAF50; /* Cell background color */
+            background-color: #4CAF50; 
         }
 
         .independent-img {
             width: 300px; 
             height: 300px; 
             border-radius: 20px; 
-            margin-left: 30px;  /* Space between text and image */ 
+            margin-left: 30px;  
         }
     </style>
 
@@ -169,10 +169,10 @@
                     <img src="https://example.com/default_profile_picture.jpg" alt="Profile Picture" class="profile-img" id="profile-img"> 
                 </label>
                 <input type="file" id="file-upload" style="display: none;" accept="image/*" onchange="previewImage(event)">
-                <h1 class="welcome-text">Hello, <span id="username">User!</span> Welcome to Neo Consumer Products Website.</h1>
+                <h1 class="welcome-text">Halo, <span id="username">User!</span> Selamat datang di Website Neo Consumer Products!</h1>
             </div>
             <div>
-                <p class="products-text">We have multiple products to sell for you! >.<</p>
+                <p class="products-text"> Perusahaan terkemuka di bidang teknologi. </p>
                 <buton class="back-btn" onclick="window.location.href='../chtml/a_maininterface.html'"> Back </buton>
                 <button class="upload-btn" onclick="window.location.href='../chtml/zzz_startup.html'"> Start </button>
                 <button class="Chatting-btn" onclick="window.location.href='../chtml/zz_message_us.html'"> Message us </button> 
@@ -191,7 +191,7 @@
             document.getElementById("username").innerText = name;
         }
 
-        // IMAGE PREVIEW
+        // PREVIEW GAMBAR
         function previewImage(event) {
             const file = event.target.files[0];
             if (file) {

@@ -3,29 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SIGN-UP </title>
-    <link rel="stylesheet" href="../acss/style.css"> 
-</head>
-<body style="background-color: rgba(129, 106, 47, 0.714);">
-    <h1><center><b style="font: italic;"> WELCOME TO NCP VANGUARD SIGN-UP PAGE </b></center></h1>
-    <center> 
-        <form id="signup-form">
-            <h3>Name:</h3>
-            <input type="text" placeholder="Your name" id="name" name="name" required>
-            <p></p>
-            <h3>Email:</h3>
-            <input type="email" placeholder="Your email" id="email" name="email" required>
-            <p></p>
-            <h3>Password:</h3>
-            <input type="password" placeholder="Your Password" id="password" name="password" required>
-            <p></p>
-            <h3>Password Confirmation:</h3>
-            <input type="password" placeholder="Your Password Confirmation" id="password_confirmation" name="password_confirmation" required>
-            <p></p>
-            <button type="submit" id="submit"> Sign Up </button>
-        </form>
-    </center>
-    <script src="../bjavascript/script.js"></script> 
-</body>
+    <title>SIGN-UP</title>
+    <link rel="stylesheet" href="../acss/style.css">
+    <style>
+        body {
+            background-color: rgba(129, 106, 47, 0.714);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            align-items: safe;
+            width: 200vh;
+            height: 100vh;
+            margin: 0vh;
+        }
+        .container {
+            max-width: 1200px;
+            width: 1200px;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.883);
+            border-radius: 22px;
+            box-shadow: 0 0 50px rgba(183, 29, 29, 0.7);
+        }
+        .form-container {
+            flex: 10px;
+            padding: 100px;
+            text-align: center;
+        }
 
+        h1 {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form h3 {
+            align-self: flex-start;
+            margin: 30px 20 20px;
+        }
+        form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        .banner-container {
+            width: 470px;
+            background-color: rgba(120, 61, 61, 0.953);
+            background-image: url(https://img.freepik.com/premium-photo/person-typing-laptop-computer-keyboard_662214-440732.jpg);
+            border-radius: 0 50px 50px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner {
+            width: 1000px;
+            height: 300px;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/027/427/199/original/ncp-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg');
+            background-size: 600px;
+            background-position: center;
+            border-radius: 0 10px 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>WELCOME TO NCP VANGUARD SIGN-UP PAGE</h1>
+            <form id="signup-form">
+                <center><h3>Name:</h3></center>
+                <input type="text" placeholder="Your name" id="name" name="name" required>
+                <center><h3>Email:</h3></center>
+                <input type="email" placeholder="Your email" id="email" name="email" required>
+                <center><h3>Password:</h3></center>
+                <input type="password" placeholder="Your Password" id="password" name="password" required>
+                <center><h3>Password Confirmation:</h3></center>
+                <input type="password" placeholder="Your Password Confirmation" id="password_confirmation" name="password_confirmation" required>
+                <button type="submit" id="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="banner-container">
+            <div class="banner"></div>
+        </div>
+    </div>
+    <script src="../bjavascript/script.js"></script>
+</body>
 </html>
