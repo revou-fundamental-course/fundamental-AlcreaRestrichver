@@ -2,9 +2,9 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ "Features" ]
+    branches: [ "Alcrea-Restrichver-RevoU-Fundamental" ]
   pull_request:
-    branches: [ "Features" ]
+    branches: [ "Alcrea-Restrichver-RevoU-Fundamental" ]
 
 jobs:
   build:
@@ -18,3 +18,4 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
