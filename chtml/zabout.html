@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: cadetblue;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../acss/style.css">
+    <style>
+        
+        /* Rangkaa Utama */
+        body {
+            font-family: Arial, sans-serif;
+            color: brown;
+            text-align: center;
+            position: relative; 
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0e920ea5;
+            transform: scale(1.05); /* memperbesar ketika di hover */
+        }
+
+        hr {
+            width: 10cm;
+            border: 1px solid brown;
+            margin: 20px auto;
+        }
+
+        .table-container {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+
+        th {
+            background-color: #007BFF;
+        }
+
+        td {
+            background-color: #4CAF50;
+        }
+
+        .back-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .center-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1><b>About NCP Vanguard</b></h1></center>
+    <hr>
+
+    <button class="btn center-btn Company_Profiles" onclick="window.location.href='../chtml/zz_companyprofiles.html'">Company Profiles</button>
+    <button class="btn center-btn Contact-btn" onclick="window.location.href='https://www.instagram.com/alcrea705/'">CONTACT US</button>
+    <button class="btn center-btn Branch" onclick="window.location.href='../chtml/zbranches.html'">Our Branches</button>
+    <button class="btn back-btn" onclick="window.location.href='../chtml/a_maininterface.html'">Back</button>
+</body>
+</html>
