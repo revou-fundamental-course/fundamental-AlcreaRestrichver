@@ -208,6 +208,24 @@ input, select, textarea {
             <p><strong>Birthdate:</strong> <span id="result-birthdate"></span></p>
             <p><strong>Gender:</strong> <span id="result-gender"></span></p>
             <p><strong>Message:</strong> <span id="result-message"></span></p>
+
+            <script>
+                document.getElementById('message-us').addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    var name = document.getElementById('ms-name').value;
+                    var birthdate = document.getElementById('ms-birthdate').value;
+                    var gender = document.getElementById('ms-gender').value;
+                    var message = document.getElementById('ms-message').value;
+
+                    document.getElementById('result-name').textContent = name;
+                    document.getElementById('result-birthdate').textContent = birthdate;
+                    document.getElementById('result-gender').textContent = gender;
+                    document.getElementById('result-message').textContent = message;
+
+                    this.reset(); // Optional: Reset the form after submission
+                });
+            </script>
         </div>
     </div>
 </body>

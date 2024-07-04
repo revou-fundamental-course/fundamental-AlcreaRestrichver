@@ -23,7 +23,7 @@ document.getElementById('signup-form').addEventListener("submit", function(event
     localStorage.setItem("email", email);
 
     // Redirect to index.html
-    window.location.href = "../chtml/index.html"; // Updated path to index.html
+    window.location.href = "../chtml/a_maininterface.html" // Updated path to index.html
 });
 
 // MESSAGE US AREA //
