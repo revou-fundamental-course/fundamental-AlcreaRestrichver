@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 30px;
+            border-bottom: 5px solid #007BFF;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .header p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+        .image-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            margin: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .image-container img {
+            max-width: 600px;
+            max-height: 300px;
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        .text-section {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-top: 5px solid #007BFF;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .text-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .text-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #1e3c72;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .btn {
+            display: inline-block; 
+            margin: 10px; 
+            padding: 15px 30px; 
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; 
+            font-size: 16px; 
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NCP Vanguard Profiles</h1>
+        <p></p>
+    </div>
+
+    <div class="image-container">
+        <img src="https://img.freepik.com/free-photo/hightech-robot-arms-automated-manufacturing-plant_60438-3708.jpg" alt="Company 1">
+        <img src="https://img.freepik.com/free-photo/engineer-cooperation-male-female-technician-maintenance-control-relay-robot-arm-system-welding-with-tablet-laptop-control-quality-operate-process-work-heavy-industry-40-manufacturing-factory_609648-792.jpg" alt="Company 2">
+        <img src="https://www.ntc.edu/sites/default/files/styles/full_width_16_9/public/2023-02/SmartManufacturingTechnologyHeroImage.jpg?itok=GhMzOXai" alt="Company 3">
+        <img src="https://www.stonebridgeiron.com/wp-content/uploads/2016/06/Quad-C-Exterior.jpg" alt="Company 4">
+        <img src="https://www.freepik.com/pikaso/ai-image-generator?prompt=make+a+tech+factory+in+mid+2077+with+the+name+of+factory+is+NCP+Tech&style=threeD&sign-up=google" alt="Company 5">
+    </div>
+
+    <div class="text-section">
+        <p>NCP Tech adalah perusahaan yang bekerja di bidang teknologi. Kami berkomitmen untuk selalu meningkatkan serta mempertahankan kinerja perusahaan kami sebagai
+            salah satu perusahaan terkemuka. Kami memiliki visi dan misi yang tentunya selalu menjadi motivasi kami untuk membangun per industrian teknologi di Indonesia
+            semakin maju. Oleh karena itu dengan adanya kehadiran NCP Tech, kami berharap dapat meningkatkan kekuatan industri teknologi di Indonesia untuk terus
+            berkembang mau itu teknologi bagian ekonomi, militer dan semua cabangnya. Perusahaan kami telah membuka banyak cabang dan anak perusahaan yang
+            akan bekerja semaksimal mungkin di berbagai macam bentuk industri teknologi dan akan terus berkembang setiap saat.
+        </p>
+    </div>
+
+    <div>
+            <buton class="back-btn" onclick="window.location.href='a_maininterface.html'"> Back </buton>
+    </div>
+
+    <div class="footer">
+        &copy; 2016 NCP Vanguard
+    </div>
+</body>
+</html>
