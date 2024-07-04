@@ -23,13 +23,16 @@ document.getElementById('signup-form').addEventListener("submit", function(event
     localStorage.setItem("email", email);
 
     // Redirect to index.html
+<<<<<<< HEAD
     window.location.href = "../chtml/a_maininterface.html" // Updated path to index.html
+=======
+    "window.location.href='/fundamental-AlcreaRestrichver/chtml/a_maininterface.html'"
+>>>>>>> 9ea88573d5e6164e262de5e16f239b203156335c
 });
 
-// MESSAGE US AREA //
 document.getElementById('message-us').addEventListener('submit', function(event) {
     event.preventDefault();
-
+        
     var name = document.getElementById('ms-name').value;
     var birthdate = document.getElementById('ms-birthdate').value;
     var gender = document.getElementById('ms-gender').value;

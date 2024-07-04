@@ -3,206 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NCP VANGUARD </title>
-    <link rel="stylesheet" href="../acss/style.css"> 
+    <title>SIGN-UP</title>
+    <link rel="stylesheet" href="../acss/style.css">
     <style>
         body {
+            background-color: rgba(129, 106, 47, 0.714);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            align-items: safe;
+            width: 200vh;
+            height: 100vh;
+            margin: 0vh;
+        }
+        .container {
+            max-width: 1200px;
+            width: 1200px;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.883);
+            border-radius: 22px;
+            box-shadow: 0 0 50px rgba(183, 29, 29, 0.7);
+        }
+        .form-container {
+            flex: 10px;
+            padding: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form h3 {
+            align-self: flex-start;
+            margin: 30px 20 20px;
+        }
+        form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        .banner-container {
+            width: 470px;
+            background-color: rgba(120, 61, 61, 0.953);
+            background-image: url(https://img.freepik.com/premium-photo/person-typing-laptop-computer-keyboard_662214-440732.jpg);
+            border-radius: 0 50px 50px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #000000;
-            text-align: center; 
         }
-
-        .content {
-            display: flex;
-            align-items: center;
-            max-width: 800px;
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(27, 106, 232, 0.846); 
-            border-radius: 10px; 
-            box-shadow: 0 0 20px rgba(14, 110, 220, 0.689); 
+        .banner {
+            width: 1000px;
+            height: 300px;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/027/427/199/original/ncp-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg');
+            background-size: 600px;
+            background-position: center;
+            border-radius: 0 10px 10px 0;
         }
-
-        .text-container {
-            flex: 1; 
-            text-align: left; 
-            margin-right: 30px; 
-        }
-
-        .profile-container {
-            margin-bottom: 20px;
-        }
-
-        .profile-img {
-            width: 100px; 
-            height: 100px; 
-            border-radius: 50%; 
-            cursor: pointer; 
-        }
-
-        .welcome-text {
-            font-size: 24px;
-            color: #fff;
-            margin-bottom: 1px;
-        }
-
-        .products-text {
-            font-size: 18px;
-            color: #fff;
-        }
-
-        .back-btn {
-            display: inline-block; /* Adjust button display */
-            margin-top: 10px; 
-            padding: 10px 20px;
-            background-color: #000000;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .back-btn:hover {
-            background-color: #0e920ea5;
-        }
-
-
-        .upload-btn {
-            display: inline-block; /* Adjust button display */
-            margin-top: 10px; 
-            padding: 10px 20px;
-            background-color: #000000;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .upload-btn:hover {
-            background-color: #0e920ea5;
-        }
-
-        .about-btn {
-            display: inline-block; /* Adjust button display */
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #000000;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .about-btn:hover {
-            background-color: #0e920ea5;
-        }
-
-        .Chatting-btn {
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .Chatting-btn:hover {
-            background-color: #0e920ea5;
-        }
-
-        .Chatting-btn {
-            display: inline-block; /* Adjust button display */
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #000000;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .table-container {
-            flex: 1; /* Take remaining space */
-            text-align: center; 
-        }
-
-        table {
-            width: 100%; 
-            border-collapse: collapse;
-            margin-top: 20px; 
-        }
-
-        th, td {
-            padding: 10px; 
-            border: 1px solid #fff; 
-            color: #fff; 
-        }
-
-        th {
-            background-color: #007BFF; 
-        }
-
-        td {
-            background-color: #4CAF50; 
-        }
-
-        .independent-img {
-            width: 300px; 
-            height: 300px; 
-            border-radius: 20px; 
-            margin-left: 30px;  
-        }
+        
     </style>
-
-
-
-/* PERBATASAN */
-
-
- 
 </head>
 <body>
-    <div class="content">
-        <div class="text-container">
-            <div class="profile-container">
-                <label for="file-upload">
-                    <img src="https://example.com/default_profile_picture.jpg" alt="Profile Picture" class="profile-img" id="profile-img"> 
-                </label>
-                <input type="file" id="file-upload" style="display: none;" accept="image/*" onchange="previewImage(event)">
-                <h1 class="welcome-text">Halo, <span id="username">User!</span> Selamat datang di Website Neo Consumer Products!</h1>
-            </div>
-            <div>
-                <p class="products-text"> Perusahaan terkemuka di bidang teknologi. </p>
-                <buton class="back-btn" onclick="window.location.href='../chtml/a_maininterface.html'"> Back </buton>
-                <button class="upload-btn" onclick="window.location.href='../chtml/zzz_startup.html'"> Start </button>
-                <button class="Chatting-btn" onclick="window.location.href='../chtml/zz_message_us.html'"> Message us </button> 
-                <button class="about-btn" onclick="window.location.href='../chtml/zabout.html'"> About Us</button>
-            </div>
+    <div class="container">
+        <div class="form-container">
+            <h1>WELCOME TO NCP VANGUARD SIGN-UP PAGE</h1>
+            <form id="signup-form">
+                <center><h3>Name:</h3></center>
+                <input type="text" placeholder="Your name" id="name" name="name" required>
+                <center><h3>Email:</h3></center>
+                <input type="email" placeholder="Your email" id="email" name="email" required>
+                <center><h3>Password:</h3></center>
+                <input type="password" placeholder="Your Password" id="password" name="password" required>
+                <center><h3>Password Confirmation:</h3></center>
+                <input type="password" placeholder="Your Password Confirmation" id="password_confirmation" name="password_confirmation" required>
+                <button type="submit" id="submit">Sign Up</button>
+            </form>
         </div>
-
-        <img src="https://static.vecteezy.com/system/resources/previews/027/427/199/original/ncp-logo-design-inspiration-for-a-unique-identity-modern-elegance-and-creative-design-watermark-your-success-with-the-striking-this-logo-vector.jpg" alt="Independent Image" class="independent-img">
+        <div class="banner-container">
+            <div class="banner"></div>
+        </div>
     </div>
-    <script src="bjavascript/script.js"></script> 
-    <script>
-
-        // Users-name retriever
-        const name = localStorage.getItem("name");
-        if (name) {
-            document.getElementById("username").innerText = name;
-        }
-
-        // PREVIEW GAMBAR
-        function previewImage(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function() {
-                    const imgElement = document.getElementById("profile-img");
-                    imgElement.src = reader.result;
-                }
-                reader.readAsDataURL(file);
-            }
-        }
-    </script>
+    <script src="../bjavascript/script.js"></script>
 </body>
 </html>
